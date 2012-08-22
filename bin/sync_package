@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 var sync = require("../lib/sync_package.js");
 
-var args = process.argv.slice(0);
+var program = require('commander');
+program
+  .version(require('../package.json').version)
+  .option('-D, --no-denpendencies', 'Dont sync denpendencies')
+  .parse(process.argv);
 
-// shift off node and script name
-args.shift(); args.shift();
-
-if (args.length < 1) {
-  throw "syntax: sync_package packagename";
+if (program.args.length < 1) {
+  console.log("Syntax: sync_package packagename");
+  return;
 }
 
-sync(args[0]);
+sync(program.args[0], program.denpendencies);
