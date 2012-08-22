@@ -5,13 +5,13 @@ var program = require('commander');
 program
   .version(require('../package.json').version)
   .option('-D, --no-denpendencies', 'Dont sync denpendencies')
+  .option('-a, --devdenpendencies', 'Sync all dev denpendencies')
   .parse(process.argv);
 
 if (program.args.length < 1) {
-  console.log("Syntax: sync_package packagename [-D]");
+  console.log("Syntax: sync_package packagename [-D][-a]");
   return;
 }
-
 program.args.forEach(function (id) {
-  sync(id, program.denpendencies);
+  sync(id, program.denpendencies, program.devdenpendencies);
 });
