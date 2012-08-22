@@ -32,6 +32,7 @@ npm config set local_registry http://username:password@ip/registry/
 sync_package sync_package
 sync_package express
 sync_package express -D // 不同步依赖
+sync_package connect express // 同时同步多个模块
 ```
 
 事实上，这个模块可以同步任意两个CouchDB数据的文档。

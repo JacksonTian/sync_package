@@ -12,4 +12,6 @@ if (program.args.length < 1) {
   return;
 }
 
-sync(program.args[0], program.denpendencies);
+program.args.forEach(function (id) {
+  sync(id, program.denpendencies);
+});
