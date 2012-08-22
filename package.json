@@ -1,6 +1,6 @@
 {
   "name": "sync_package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sync package from remote registry to local registry",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "dependencies": {
     "npm": ">=1.1.58",
     "eventproxy": ">=0.1.2",
-    "request": ">=2.10.0"
+    "request": ">=2.10.0",
+    "colors": ">=0.6.0-1"
   },
   "bin": "./bin/sync_package",
   "author": "Jackson Tian",
