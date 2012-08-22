@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+var sync = require("../lib/sync_package.js");
+
+var args = process.argv.slice(0);
+
+// shift off node and script name
+args.shift(); args.shift();
+
+if (args.length < 1) {
+  throw "syntax: sync_package packagename";
+}
+
+sync(args[0]);
