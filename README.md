@@ -3,6 +3,11 @@ Sync package
 # 起源
 Mikeal Rogers大神曾经提供了一个CouchDB同步工具[`replicate`](http://github.com/mikeal/replicate)。但是它是全量同步的，且是依次同步的。但是在某些情况下，我需要快速同步我所知道的几个模块到我的本地来，这就是本模块`sync_package`诞生的原因。
 
+# 特色
+
+1. 快速同步指定模块
+2. 自动同步依赖模块
+
 # 用法
 ## 安装模块
 ```
@@ -26,6 +31,7 @@ npm config set local_registry http://username:password@ip/registry/
 ```
 sync_package sync_package
 sync_package express
+sync_package express -D // 不同步依赖
 ```
 
 事实上，这个模块可以同步任意两个CouchDB数据的文档。
