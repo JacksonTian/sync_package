@@ -8,7 +8,7 @@ program
   .parse(process.argv);
 
 if (program.args.length < 1) {
-  console.log("Syntax: sync_package packagename");
+  console.log("Syntax: sync_package packagename [-D]");
   return;
 }
 
