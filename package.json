@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "npm": ">=1.1.58",
-    "eventproxy": ">=0.1.2",
+    "eventproxy": "=0.1.2",
     "request": ">=2.10.0",
     "colors": ">=0.6.0-1",
     "commander": ">=1.0.1",
