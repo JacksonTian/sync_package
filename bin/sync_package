@@ -6,6 +6,7 @@ program
   .version(require('../package.json').version)
   .option('-D, --no-denpendencies', 'Dont sync denpendencies')
   .option('-a, --devdenpendencies', 'Sync all dev denpendencies')
+  .option('-b, --browser', 'use browser mode color')
   .parse(process.argv);
 
 if (program.args.length < 1) {
@@ -13,5 +14,5 @@ if (program.args.length < 1) {
   return;
 }
 program.args.forEach(function (id) {
-  sync(id, program.denpendencies, program.devdenpendencies);
+  sync(id, program.denpendencies, program.devdenpendencies, program.browser);
 });
