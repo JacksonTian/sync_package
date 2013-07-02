@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var sync = require("../lib/sync_package.js");
+var sync = require("../lib/sync_package");
 
 var program = require('commander');
 program
@@ -13,6 +13,7 @@ if (program.args.length < 1) {
   console.log("Syntax: sync_package packagename [-D][-a]");
   return;
 }
+
 program.args.forEach(function (id) {
   sync(id, program.denpendencies, program.devdenpendencies, program.browser);
 });
