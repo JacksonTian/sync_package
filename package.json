@@ -3,9 +3,6 @@
   "version": "0.1.1",
   "description": "Sync package from remote registry to local registry",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "sync",
     "package"
@@ -19,5 +16,10 @@
   },
   "bin": "./bin/sync_package",
   "author": "Jackson Tian",
+  "homepage": "https://github.com/TBEDP/sync_package",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TBEDP/sync_package.git"
+  },
   "license": "MIT"
 }
