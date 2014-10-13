@@ -1,6 +1,6 @@
 {
   "name": "sync_package",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Sync package from remote registry to local registry",
   "main": "index.js",
   "keywords": [
