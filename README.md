@@ -1,5 +1,7 @@
 Sync package
 ===
+The package is no longer maintained. If you need build your private registry, [CNPM](https://github.com/cnpm/) is recommend.
+
 # 起源
 Mikeal Rogers大神曾经提供了一个CouchDB同步工具[`replicate`](http://github.com/mikeal/replicate)。但是它是全量同步的，且是依次同步的。但是在某些情况下，我需要快速同步我所知道的几个模块到我的本地来，这就是本模块`sync_package`诞生的原因。
 
